@@ -23,7 +23,6 @@ class App extends Component {
             "יש לך יופי מסתורי, חבל שלא רואים אותו",
             "יש לך יופי מתמטי אתה דומה לנעלם",
             "שקלת לשחק בסרט? מחפשים קוף משנה בערוץ המדע",
-            "דבר יותר לאט שאני אצליח לשים זין על כל מה שאתה אומר",
             "יש לך יופי עירוני, נראה שדרסה אותך מכונית"
         ]
 
@@ -49,7 +48,7 @@ class App extends Component {
     render() {
         return (
             <div className="app">
-                <Alert className="alert" variant="primary">Created By Strike | For Learning React 💙</Alert>
+                <Alert className="alert" variant="success">Created By Strike | For Learning React <img className="react-icon" alt="test" src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/640px-React-icon.svg.png'></img></Alert>
                 <div className="container">
                     <h1>הקוטל 2000</h1>
                     <Alert className={this.state.displayAlert} variant="danger">❌ אנא הזן שם לקטול! השם לא יכול להיות ריק</Alert>

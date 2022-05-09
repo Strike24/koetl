@@ -46,6 +46,11 @@ h1 {
         width: 100%;
     }
 
+    .yesNull {
+        font-size: 14px;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -76,4 +81,10 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
 
+}
+
+.react-icon {
+    width: 20px;
+    /* you can use % */
+    height: auto;
 }
