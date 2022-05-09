@@ -7,7 +7,8 @@ class App extends Component {
         super(props);
         this.state = {
             answer: "הקטילה שתצא",
-            name: ""
+            name: "",
+            displayAlert: "noNull",
         }
     }
 
@@ -27,19 +28,23 @@ class App extends Component {
         ]
 
         let random = ktilot[Math.floor(Math.random() * ktilot.length)];
-
         let name = this.state.name;
         if (name === undefined || name === " " || !name) {
-            this.setState({ answer: "❌ אנא הזן שם לקטול! השם לא יכול להיות ריק" });
+            this.setState({ displayAlert: "yesNull" });
+            this.setState({ answer: `הקטילה שתצא` });
             return;
         }
 
-
+        this.setState({ displayAlert: "noNull" });
 
         this.setState({ answer: `${name}, ${random}` });
     }
 
-
+    reset() {
+        this.setState({ displayAlert: "noNull" });
+        this.setState({ answer: `הקטילה שתצא` });
+        this.setState({ name: "" });
+    }
 
     render() {
         return (
@@ -47,10 +52,12 @@ class App extends Component {
                 <Alert className="alert" variant="primary">Created By Strike | For Learning React 💙</Alert>
                 <div className="container">
                     <h1>הקוטל 2000</h1>
+                    <Alert className={this.state.displayAlert} variant="danger">❌ אנא הזן שם לקטול! השם לא יכול להיות ריק</Alert>
                     <Form inline="true">
                         <FormControl className="form-control" onChange={event => this.setState({ name: event.target.value })} placeholder="השם שאתה רוצה לקטול" />
                         <FormControl className="form-answar" placeholder={this.state.answer} as="textarea" rows={3} readOnly />
-                        <Button className="btn-search" variant="outline-primary" onClick={() => this.answer()}>מצא קטילה</Button>
+                        <Button className="btn-search" variant="danger" onClick={() => this.reset()}>אפס קטילה</Button>
+                        <Button className="btn-search" onClick={() => this.answer()}>מצא קטילה</Button>
 
                     </Form>
 

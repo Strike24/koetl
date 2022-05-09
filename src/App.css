@@ -18,6 +18,8 @@ h1 {
 
 .btn-search {
     margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .form-control {
@@ -29,4 +31,49 @@ h1 {
 
 .alert {
     width: 17%;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+    .alert {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+
+
+    .alert {
+        width: 100%;
+    }
+}
+
+.noNull {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    display: none;
+
+}
+
+.yesNull {
+    width: 40%;
+    margin: auto;
+    margin-bottom: 20px;
+
 }
