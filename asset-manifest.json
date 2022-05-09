@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/koetl/static/css/main.3d27a01f.css",
-    "main.js": "/koetl/static/js/main.7ae4667d.js",
+    "main.css": "/koetl/static/css/main.4a75e2ea.css",
+    "main.js": "/koetl/static/js/main.ace0783b.js",
     "index.html": "/koetl/index.html",
-    "main.3d27a01f.css.map": "/koetl/static/css/main.3d27a01f.css.map",
-    "main.7ae4667d.js.map": "/koetl/static/js/main.7ae4667d.js.map"
+    "main.4a75e2ea.css.map": "/koetl/static/css/main.4a75e2ea.css.map",
+    "main.ace0783b.js.map": "/koetl/static/js/main.ace0783b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d27a01f.css",
-    "static/js/main.7ae4667d.js"
+    "static/css/main.4a75e2ea.css",
+    "static/js/main.ace0783b.js"
   ]
 }
